@@ -1,0 +1,486 @@
+-- doomspire brickbattle script i guess
+-- made by Aar0n#5011
+-- dont steal pls even though its trash
+
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local maincorner = Instance.new("UICorner")
+local eggsploit = Instance.new("TextLabel")
+local eggcorner = Instance.new("UICorner")
+local red = Instance.new("TextButton")
+local redcorner = Instance.new("UICorner")
+local blue = Instance.new("TextButton")
+local bluecorner = Instance.new("UICorner")
+local green = Instance.new("TextButton")
+local greencorner = Instance.new("UICorner")
+local closebutton = Instance.new("TextButton")
+local closecorner = Instance.new("UICorner")
+local extrasopen = Instance.new("TextButton")
+local extrasopencorner = Instance.new("UICorner")
+local credits = Instance.new("TextLabel")
+local manualred = Instance.new("TextButton")
+local extrasopencorner_2 = Instance.new("UICorner")
+local manualyellow = Instance.new("TextButton")
+local extrasopencorner_3 = Instance.new("UICorner")
+local manualblue = Instance.new("TextButton")
+local extrasopencorner_4 = Instance.new("UICorner")
+local manualgreen = Instance.new("TextButton")
+local extrasopencorner_5 = Instance.new("UICorner")
+local middle = Instance.new("TextButton")
+local extrasopencorner_6 = Instance.new("UICorner")
+local spectators = Instance.new("TextButton")
+local extrasopencorner_7 = Instance.new("UICorner")
+local yellow = Instance.new("TextButton")
+local yellowcorner = Instance.new("UICorner")
+local open = Instance.new("Frame")
+local opencorner = Instance.new("UICorner")
+local openbutton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local extras = Instance.new("Frame")
+local extrascorner = Instance.new("UICorner")
+local extraslabel = Instance.new("TextLabel")
+local extraslabelcorner = Instance.new("UICorner")
+local iy = Instance.new("TextButton")
+local iycorner = Instance.new("UICorner")
+local freeze = Instance.new("TextButton")
+local freezecorner = Instance.new("UICorner")
+local noclip = Instance.new("TextButton")
+local noclipcorner = Instance.new("UICorner")
+local extrasclosebutton = Instance.new("TextButton")
+local closecorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+main.BackgroundTransparency = 0.100
+main.Position = UDim2.new(0, 447, 0, 137)
+main.Size = UDim2.new(0, 400, 0, 300)
+
+maincorner.Name = "maincorner"
+maincorner.Parent = main
+main.Active = true
+main.Draggable = true
+
+eggsploit.Name = "eggsploit"
+eggsploit.Parent = main
+eggsploit.BackgroundColor3 = Color3.fromRGB(141, 0, 0)
+eggsploit.BorderColor3 = Color3.fromRGB(141, 0, 0)
+eggsploit.Position = UDim2.new(0.0468098447, 0, 0.0432142653, 0)
+eggsploit.Size = UDim2.new(0, 354, 0, 31)
+eggsploit.Font = Enum.Font.RobotoMono
+eggsploit.Text = "Eggsploit Hub"
+eggsploit.TextColor3 = Color3.fromRGB(255, 255, 255)
+eggsploit.TextSize = 19.000
+
+eggcorner.CornerRadius = UDim.new(0, 5)
+eggcorner.Name = "eggcorner"
+eggcorner.Parent = eggsploit
+
+red.Name = "red"
+red.Parent = main
+red.BackgroundColor3 = Color3.fromRGB(112, 0, 0)
+red.BackgroundTransparency = 0.150
+red.Position = UDim2.new(0.0500373319, 0, 0.205357149, 0)
+red.Size = UDim2.new(0, 128, 0, 62)
+red.Font = Enum.Font.Arcade
+red.Text = "Red Doomspire"
+red.TextColor3 = Color3.fromRGB(200, 0, 0)
+red.TextSize = 15.000
+
+redcorner.CornerRadius = UDim.new(0, 4)
+redcorner.Name = "redcorner"
+redcorner.Parent = red
+red.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-90.3846588, 131.400009, -0.404568166, -0.00314510125, -9.33595459e-08, 0.999995053, 3.19290809e-11, 1, 9.33601072e-08, -0.999995053, 3.25555916e-10, -0.00314510125)
+
+	wait (2)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.150078, 23.6000347, 15.8132153, -0.743844986, 4.86118594e-08, -0.668352187, 1.14400464e-07, 1, -5.45885079e-08, 0.668352187, -1.17065184e-07, -0.743844986)
+end)
+
+blue.Name = "blue"
+blue.Parent = main
+blue.BackgroundColor3 = Color3.fromRGB(0, 56, 147)
+blue.BackgroundTransparency = 0.150
+blue.Position = UDim2.new(0.613075197, 0, 0.205357149, 0)
+blue.Size = UDim2.new(0, 128, 0, 62)
+blue.Font = Enum.Font.Arcade
+blue.Text = "Blue Doomspire"
+blue.TextColor3 = Color3.fromRGB(0, 94, 245)
+blue.TextSize = 14.000
+
+bluecorner.CornerRadius = UDim.new(0, 4)
+bluecorner.Name = "bluecorner"
+bluecorner.Parent = blue
+blue.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.891543448, 131.400009, 90.2506409, -0.999995053, 2.31885999e-09, 0.00314182881, 2.08807438e-09, 1, -7.34590984e-08, -0.00314182881, -7.34521777e-08, -0.999995053)
+
+	wait (2)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(15.0360756, 23.60005, 115.510994, 0.670674443, 9.06167017e-08, -0.74175185, -4.53921345e-08, 1, 8.11233036e-08, 0.74175185, -2.07376267e-08, 0.670674443)
+end)
+
+green.Name = "green"
+green.Parent = main
+green.BackgroundColor3 = Color3.fromRGB(8, 130, 0)
+green.BackgroundTransparency = 0.150
+green.Position = UDim2.new(0.613165081, 0, 0.668149114, 0)
+green.Size = UDim2.new(0, 128, 0, 62)
+green.Font = Enum.Font.Arcade
+green.Text = "Green Doomspire"
+green.TextColor3 = Color3.fromRGB(13, 202, 0)
+green.TextSize = 14.000
+
+greencorner.CornerRadius = UDim.new(0, 4)
+greencorner.Name = "greencorner"
+greencorner.Parent = green
+green.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.117466472, 131.400009, -90.167923, 0.999955416, -1.6280012e-08, -0.00944292173, 1.53183048e-08, 1, -1.01916605e-07, 0.00944292173, 1.01767412e-07, 0.999955416)
+
+	wait (2)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.7080116, 23.6000252, -115.496376, -0.722465515, -3.70096664e-08, 0.691406965, -3.92169852e-08, 1, 1.25494086e-08, -0.691406965, -1.80483806e-08, -0.722465515)
+end)
+
+yellow.Name = "yellow"
+yellow.Parent = main
+yellow.BackgroundColor3 = Color3.fromRGB(182, 182, 0)
+yellow.BackgroundTransparency = 0.150
+yellow.Position = UDim2.new(0.0478629246, 0, 0.668149114, 0)
+yellow.Size = UDim2.new(0, 128, 0, 62)
+yellow.Font = Enum.Font.Arcade
+yellow.Text = "Yellow Doomspire"
+yellow.TextColor3 = Color3.fromRGB(248, 248, 0)
+yellow.TextSize = 13.000
+
+yellowcorner.CornerRadius = UDim.new(0, 4)
+yellowcorner.Name = "yellowcorner"
+yellowcorner.Parent = yellow
+yellow.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(89.6896744, 131.400009, 0.0683344603, 2.15205387e-06, 4.26153122e-08, -1, -7.69308062e-10, 1, 4.26153122e-08, 1, 7.69216357e-10, 2.15205387e-06)
+
+	wait (2)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(116.17939, 23.6000271, -15.0998783, 0.686828911, 3.29263514e-08, 0.726819158, 3.34219692e-08, 1, -7.68850512e-08, -0.726819158, 7.70985977e-08, 0.686828911)
+end)
+
+closebutton.Name = "closebutton"
+closebutton.Parent = main
+closebutton.BackgroundColor3 = Color3.fromRGB(173, 0, 0)
+closebutton.BorderColor3 = Color3.fromRGB(173, 0, 0)
+closebutton.Position = UDim2.new(0.953987837, 0, -0.0267857146, 0)
+closebutton.Size = UDim2.new(0, 21, 0, 21)
+closebutton.Font = Enum.Font.SourceSans
+closebutton.Text = "X"
+closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+closebutton.TextSize = 14.000
+
+closecorner.CornerRadius = UDim.new(0, 2)
+closecorner.Name = "closecorner"
+closecorner.Parent = closebutton
+
+extrasopen.Name = "extrasopen"
+extrasopen.Parent = main
+extrasopen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+extrasopen.Position = UDim2.new(0.416457981, 0, 0.458809495, 0)
+extrasopen.Size = UDim2.new(0, 60, 0, 47)
+extrasopen.Font = Enum.Font.ArialBold
+extrasopen.Text = "Extras"
+extrasopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+extrasopen.TextSize = 14.000
+
+extrasopencorner.CornerRadius = UDim.new(0, 9)
+extrasopencorner.Name = "extrasopencorner"
+extrasopencorner.Parent = extrasopen
+extras.Active = true
+extras.Draggable = true
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.193251535, 0, 0.910714269, 0)
+credits.Size = UDim2.new(0, 200, 0, 20)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "made by Aar0n#5011 dont steal plz"
+credits.TextColor3 = Color3.fromRGB(132, 132, 132)
+credits.TextSize = 14.000
+
+manualred.Name = "manualred"
+manualred.Parent = main
+manualred.BackgroundColor3 = Color3.fromRGB(171, 14, 0)
+manualred.Position = UDim2.new(0.0468937978, 0, 0.482142866, 0)
+manualred.Size = UDim2.new(0, 59, 0, 34)
+manualred.Font = Enum.Font.ArialBold
+manualred.Text = "Manual Red"
+manualred.TextColor3 = Color3.fromRGB(120, 6, 0)
+manualred.TextSize = 10.000
+manualred.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-127.53006, 145.759872, -0.362006217, -0.0220017303, -3.20934923e-08, -0.999757826, 3.43462254e-08, 1, -3.28571126e-08, 0.999757826, -3.50608218e-08, -0.0220017303)
+end)
+
+extrasopencorner_2.CornerRadius = UDim.new(0, 9)
+extrasopencorner_2.Name = "extrasopencorner"
+extrasopencorner_2.Parent = manualred
+
+manualyellow.Name = "manualyellow"
+manualyellow.Parent = main
+manualyellow.BackgroundColor3 = Color3.fromRGB(197, 148, 0)
+manualyellow.Position = UDim2.new(0.22411947, 0, 0.482142866, 0)
+manualyellow.Size = UDim2.new(0, 59, 0, 34)
+manualyellow.Font = Enum.Font.ArialBold
+manualyellow.Text = "Manual Yellow"
+manualyellow.TextColor3 = Color3.fromRGB(138, 103, 0)
+manualyellow.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(127.451767, 145.759872, -0.104065247, 0.0219966713, 9.60836957e-08, 0.999758005, 1.56846927e-08, 1, -9.64520339e-08, -0.999758005, 1.78025221e-08, 0.0219966713)
+end)
+
+extrasopencorner_3.CornerRadius = UDim.new(0, 9)
+extrasopencorner_3.Name = "extrasopencorner"
+extrasopencorner_3.Parent = manualyellow
+
+manualblue.Name = "manualblue"
+manualblue.Parent = main
+manualblue.BackgroundColor3 = Color3.fromRGB(0, 79, 197)
+manualblue.Position = UDim2.new(0.611088216, 0, 0.482142866, 0)
+manualblue.Size = UDim2.new(0, 59, 0, 34)
+manualblue.Font = Enum.Font.ArialBold
+manualblue.Text = "Manual Blue"
+manualblue.TextColor3 = Color3.fromRGB(0, 58, 141)
+manualblue.TextSize = 9.000
+manualblue.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.035412427, 145.759872, 127.448997, 0.999402702, 7.75420228e-10, -0.0345590077, -7.41087414e-10, 1, 1.00626785e-09, 0.0345590077, -9.80055259e-10, 0.999402702)
+end)
+
+extrasopencorner_4.CornerRadius = UDim.new(0, 9)
+extrasopencorner_4.Name = "extrasopencorner"
+extrasopencorner_4.Parent = manualblue
+
+manualgreen.Name = "manualgreen"
+manualgreen.Parent = main
+manualgreen.BackgroundColor3 = Color3.fromRGB(34, 129, 0)
+manualgreen.Position = UDim2.new(0.783922434, 0, 0.482142866, 0)
+manualgreen.Size = UDim2.new(0, 59, 0, 34)
+manualgreen.Font = Enum.Font.ArialBold
+manualgreen.Text = "Manual Green"
+manualgreen.TextColor3 = Color3.fromRGB(21, 79, 0)
+manualgreen.TextSize = 9.000
+manualgreen.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.400119156, 145.999832, -127.994667, -0.999506116, 1.21255246e-08, 0.0314242505, 1.61432734e-08, 1, 1.27601339e-07, -0.0314242505, 1.28045613e-07, -0.999506116)
+end)
+
+extrasopencorner_5.CornerRadius = UDim.new(0, 9)
+extrasopencorner_5.Name = "extrasopencorner"
+extrasopencorner_5.Parent = manualgreen
+
+middle.Name = "middle"
+middle.Parent = main
+middle.BackgroundColor3 = Color3.fromRGB(152, 152, 152)
+middle.Position = UDim2.new(0.435459286, 0, 0.254943848, 0)
+middle.Size = UDim2.new(0, 46, 0, 31)
+middle.Font = Enum.Font.ArialBold
+middle.Text = "Middle"
+middle.TextColor3 = Color3.fromRGB(91, 91, 91)
+middle.TextSize = 12.000
+middle.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.523370087, 132.600006, -0.108537957, -0.00628182292, 3.48424827e-08, 0.999980032, 6.38365139e-09, 1, -3.48030511e-08, -0.999980032, 6.16489482e-09, -0.00628182292)
+end)
+
+extrasopencorner_6.CornerRadius = UDim.new(0, 9)
+extrasopencorner_6.Name = "extrasopencorner"
+extrasopencorner_6.Parent = middle
+
+spectators.Name = "spectators"
+spectators.Parent = main
+spectators.BackgroundColor3 = Color3.fromRGB(152, 152, 152)
+spectators.Position = UDim2.new(0.435459226, 0, 0.718822241, 0)
+spectators.Size = UDim2.new(0, 46, 0, 31)
+spectators.Font = Enum.Font.ArialBold
+spectators.Text = "Spectators"
+spectators.TextColor3 = Color3.fromRGB(91, 91, 91)
+spectators.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.610356867, 387.5, 1.50744653, 0.999821663, -6.22918463e-08, -0.0188617408, 6.25814707e-08, 1, 1.47637982e-08, 0.0188617408, -1.59415663e-08, 0.999821663)
+end)
+
+extrasopencorner_7.CornerRadius = UDim.new(0, 9)
+extrasopencorner_7.Name = "extrasopencorner"
+extrasopencorner_7.Parent = spectators
+
+
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.Position = UDim2.new(0.894904435, 0, 0.622792959, 0)
+open.Size = UDim2.new(0, 99, 0, 53)
+open.Visible = false
+
+opencorner.CornerRadius = UDim.new(0, 7)
+opencorner.Name = "opencorner"
+opencorner.Parent = open
+
+openbutton.Name = "openbutton"
+openbutton.Parent = open
+openbutton.BackgroundColor3 = Color3.fromRGB(141, 0, 0)
+openbutton.Size = UDim2.new(0, 99, 0, 53)
+openbutton.Font = Enum.Font.RobotoMono
+openbutton.Text = "Open"
+openbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+openbutton.TextSize = 20.000
+
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = openbutton
+
+extras.Name = "extras"
+extras.Parent = ScreenGui
+extras.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+extras.BackgroundTransparency = 0.100
+extras.Position = UDim2.new(0.685624003, 0, 0.343499184, 0)
+extras.Size = UDim2.new(0, 236, 0, 189)
+extras.Visible = false
+
+extrascorner.Name = "extrascorner"
+extrascorner.Parent = extras
+
+extraslabel.Name = "extraslabel"
+extraslabel.Parent = extras
+extraslabel.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+extraslabel.Position = UDim2.new(0.0508474559, 0, 0.0317460336, 0)
+extraslabel.Size = UDim2.new(0, 216, 0, 19)
+extraslabel.Font = Enum.Font.RobotoMono
+extraslabel.Text = "Extra Stuff"
+extraslabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+extraslabel.TextSize = 17.000
+
+extraslabelcorner.CornerRadius = UDim.new(0, 5)
+extraslabelcorner.Name = "extraslabelcorner"
+extraslabelcorner.Parent = extraslabel
+
+iy.Name = "iy"
+iy.Parent = extras
+iy.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+iy.BackgroundTransparency = 0.100
+iy.Position = UDim2.new(0.0508474559, 0, 0.227513224, 0)
+iy.Size = UDim2.new(0, 210, 0, 32)
+iy.Font = Enum.Font.Arcade
+iy.Text = "Infinite Yield"
+iy.TextColor3 = Color3.fromRGB(179, 179, 179)
+iy.TextSize = 17.000
+
+iycorner.CornerRadius = UDim.new(0, 4)
+iycorner.Name = "iycorner"
+iycorner.Parent = iy
+iy.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+freeze.Name = "freeze"
+freeze.Parent = extras
+freeze.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+freeze.BackgroundTransparency = 0.100
+freeze.Position = UDim2.new(0.0508474559, 0, 0.497354507, 0)
+freeze.Size = UDim2.new(0, 210, 0, 32)
+freeze.Font = Enum.Font.Arcade
+freeze.Text = "Freeze Gui"
+freeze.TextColor3 = Color3.fromRGB(179, 179, 179)
+freeze.TextSize = 17.000
+
+freezecorner.CornerRadius = UDim.new(0, 4)
+freezecorner.Name = "freezecorner"
+freezecorner.Parent = freeze
+freeze.MouseButton1Down:connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+
+	loadstring(game:HttpGet('https://pastebin.com/raw/MPJVP6CV'))()
+end)
+
+noclip.Name = "noclip"
+noclip.Parent = extras
+noclip.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+noclip.BackgroundTransparency = 0.100
+noclip.Position = UDim2.new(0.0508474559, 0, 0.751322746, 0)
+noclip.Size = UDim2.new(0, 210, 0, 32)
+noclip.Font = Enum.Font.Arcade
+noclip.Text = "Noclip"
+noclip.TextColor3 = Color3.fromRGB(179, 179, 179)
+noclip.TextSize = 17.000
+
+noclipcorner.CornerRadius = UDim.new(0, 4)
+noclipcorner.Name = "noclipcorner"
+noclipcorner.Parent = noclip
+noclip.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/aH7AFwGq'))()
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Noclip Script";
+		Text = "press e to toggle on and off";
+		Icon = "rbxassetid://2541869220";
+		Duration = 8;
+		Callback = animsbindable;
+		Button1 = "OK";
+	})
+end)
+
+extrasclosebutton.Name = "extrasclosebutton"
+extrasclosebutton.Parent = extras
+extrasclosebutton.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+extrasclosebutton.BorderColor3 = Color3.fromRGB(74, 74, 74)
+extrasclosebutton.Position = UDim2.new(0.93703866, 0, -0.0479497351, 0)
+extrasclosebutton.Size = UDim2.new(0, 21, 0, 21)
+extrasclosebutton.Font = Enum.Font.SourceSans
+extrasclosebutton.Text = "X"
+extrasclosebutton.TextColor3 = Color3.fromRGB(200, 200, 200)
+extrasclosebutton.TextSize = 14.000
+
+closecorner_2.CornerRadius = UDim.new(0, 2)
+closecorner_2.Name = "closecorner"
+closecorner_2.Parent = extrasclosebutton
+
+-- Scripts:
+
+local function APSZ_fake_script() -- closebutton.LocalScript 
+	local script = Instance.new('LocalScript', closebutton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.open.Visible = true
+	end)
+end
+coroutine.wrap(APSZ_fake_script)()
+local function CKAI_fake_script() -- extrasopen.LocalScript 
+	local script = Instance.new('LocalScript', extrasopen)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.extras.Visible = true
+	end)
+end
+coroutine.wrap(CKAI_fake_script)()
+local function KFQBT_fake_script() -- openbutton.LocalScript 
+	local script = Instance.new('LocalScript', openbutton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.main.Visible = true
+	end)
+end
+coroutine.wrap(KFQBT_fake_script)()
+local function RSAWQN_fake_script() -- extrasclosebutton.LocalScript 
+	local script = Instance.new('LocalScript', extrasclosebutton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		end)
+end
+coroutine.wrap(RSAWQN_fake_script)()
